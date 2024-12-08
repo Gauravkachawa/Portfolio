@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    margin-top: 80px;
+}
+
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    flex: 1;
+    max-width: 600px;
+    font-size: var(--big-font-size)
+}
+
+.home-title {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-5);
+}
+
+.home__title-color {
+    color: var(--first-color);
+  }
+
+.home-image {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+    transition: transform 0.3s ease;
+}
+
+.home-image img:hover {
+    transform: scale(1.1);
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#home span {
+    color: blue;
+}
+
+#home .btn {
+    background: #ffcc00;
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+
+}
+
+#home .btn:hover {
+    background: #ffcc00;
+}
+
+h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-box-left {
+    margin: 10px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    width: 47%;
+    justify-content: space-around;
+    height: 100%;
+    background-color: rgba(202, 202, 202, 0.465);
+}
+
+.about-box-right {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 47%;
+}
+
+.about-box {
+    background-color: rgba(202, 202, 202, 0.465);
+    border: 1px solid #333;
+    border-radius: 15px;
+    flex: 1;
+    margin: 5px 0;
+}
+
+.about-container h4 {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.about-container p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #0066cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background: #004000;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: black;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: wavy;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+   
+}
+
+#projects {
+    background:white;
+    padding: 80px 0;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    animation: fadeInText 2s ease-out;
+  }
+  
+  .project-cards {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .project-card {
+    border-radius: 50px;
+    width: 30%;
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(9, 0, 0, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .project-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Glassmorphism Section */
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 80px 0;
+    color: white;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  form input, form textarea {
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  form button {
+    background: #f39c12;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #e67e22;
+  }
+
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Title styling */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Social icons container styling */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* space between the icons */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Move it 50px down initially */
+    animation: slideIn 1s ease-out forwards; /* Trigger the animation */
+    animation-delay: 0.3s; /* Delay to make the animation more interesting */
+  }
+  
+  /* Animation for scroll effect */
+  @keyframes slideIn {
+    to {
+      opacity: 1; /* Fade in */
+      transform: translateY(0); /* Move into original position */
+    }
+  }
+  
+  /* Styling for each individual social icon link */
+  .social-icon {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-icon:hover {
+    background-color: #0073b1; /* Color change on hover for LinkedIn */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  .social-icon i {
+    font-size: 24px;
+    color: #0073b1; /* Default icon color */
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for each icon */
+  .social-icon:hover i {
+    color: #fff; /* Change icon color on hover */
+  }
+  
+  /* Customize icons for different platforms */
+  .social-icon:nth-child(2) { /* Github */
+    background-color: #333;
+  }
+  
+  .social-icon:nth-child(2):hover {
+    background-color: #000;
+  }
+  
+  .social-icon:nth-child(2) i {
+    color: #fff;
+  }
+  
+  .social-icon:nth-child(3) { /* Twitter */
+    background-color: #1DA1F2;
+  }
+  
+  .social-icon:nth-child(3):hover {
+    background-color: #0d8ccf;
+  }
+  
+  .social-icon:nth-child(3) i {
+    color: #fff;
+  }
+  
+  .social-icon:nth-child(4) { /* Instagram */
+    background-color: #E4405F;
+  }
+  
+  .social-icon:nth-child(4):hover {
+    background-color: #c13584;
+  }
+  
+  .social-icon:nth-child(4) i {
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .social-icons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .social-icon {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .social-icon i {
+      font-size: 20px;
+    }
+  }
+  
+  /* Container styling */
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Title styling */
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Social icons container styling */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* space between the icons */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Move it 50px down initially */
+    animation: slideIn 1s ease-out forwards; /* Trigger the animation */
+    animation-delay: 0.3s; /* Delay to make the animation more interesting */
+  }
+  
+  /* Animation for scroll effect */
+  @keyframes slideIn {
+    to {
+      opacity: 1; /* Fade in */
+      transform: translateY(0); /* Move into original position */
+    }
+  }
+  
+  /* Styling for each individual social icon link */
+  .social-icon {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover spin effect for each icon */
+  .social-icon:hover {
+    background-color: #0073b1; /* Color change on hover for LinkedIn */
+    transform: rotate(360deg); /* Spin the icon */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for spinning */
+  }
+  
+  .social-icon i {
+    font-size: 24px;
+    color: #0073b1; /* Default icon color */
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for each icon */
+  .social-icon:hover i {
+    color: #fff; /* Change icon color on hover */
+  }
+  
+  /* Customize icons for different platforms */
+  .social-icon:nth-child(2) { /* Github */
+    background-color: #333;
+  }
+  
+  .social-icon:nth-child(2):hover {
+    background-color: #000;
+  }
+  
+  .social-icon:nth-child(2) i {
+    color: #fff;
+  }
+  
+  .social-icon:nth-child(3) { /* Twitter */
+    background-color: #1DA1F2;
+  }
+  
+  .social-icon:nth-child(3):hover {
+    background-color: #0d8ccf;
+  }
+  
+  .social-icon:nth-child(3) i {
+    color: #fff;
+  }
+  
+  .social-icon:nth-child(4) { /* Instagram */
+    background-color: #E4405F;
+  }
+  
+  .social-icon:nth-child(4):hover {
+    background-color: #c13584;
+  }
+  
+  .social-icon:nth-child(4) i {
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .social-icons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .social-icon {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .social-icon i {
+      font-size: 20px;
+    }
+  }
+  
